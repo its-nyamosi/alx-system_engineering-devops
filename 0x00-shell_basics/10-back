@@ -1,4 +1,3 @@
 #!/bin/bash
-current_dir=$(pwd)
 cd -
-echo "Changed directory from ${current_dir} to $(pwd)"
+
