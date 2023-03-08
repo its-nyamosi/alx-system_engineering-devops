@@ -1,2 +1,2 @@
 #!/bin/bash
-ls -m
+ls -alF | awk '{if ($9 ~ /^./) print $9", "; else if ($1 ~ /^d/) print $9"/, "; else print $9", "}' | sort -k1.1d -k1.2n | tr -d '\n'; echo
